@@ -8,6 +8,8 @@
 
   /* Cross Axis */
   align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .child {
@@ -15,13 +17,4 @@
   height: 200px;
   background: peru;
   color: white;
-}
-
-.child:nth-child(2) {
-  order: 1;
-  align-self: center;
-}
-
-.child:nth-child(3) {
-  align-self: flex-end;
 }
