@@ -4,28 +4,27 @@
   gap: 10px;
 
   height: 50vh;
-  grid-template:
-    [header-start] "header header header header" 1fr [header-end]
-    [content-start] "content content content nav" 2fr [content-end]
-    [footer-start] "footer footer footer footer" 1fr [footer-end] / 1fr 1fr 1fr 1fr;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  place-items: start end;
+  /*justify-items: end;
+  align-items: start;*/
 }
 
 .header {
   background-color: wheat;
-  grid-area: header;
 }
 
 .content {
   background-color: blue;
-  grid-area: content;
 }
 
 .nav {
   background-color: teal;
-  grid-area: nav;
 }
 
 .footer {
   background-color: thistle;
-  grid-area: footer;
 }
